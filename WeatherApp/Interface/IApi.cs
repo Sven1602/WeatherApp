@@ -1,8 +1,4 @@
-﻿
-
-using WetterApp.Models;
-
-namespace WetterApp.Interface
+﻿namespace WetterApp.Interface
 {
     public interface IApi
     {
