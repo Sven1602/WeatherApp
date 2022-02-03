@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+ <div class="container">
+        <form>
+          <div class="form-group row justify-content-center">
+                <div class="col-md-5">
+                    <h3>Stadtnamen eingeben</h3>
+                    <input id="city" class="form-control" placeholder="Stadtname"/>
+                </div>
+                <div class="col-md-auto align-self-end">
+                   <input class="btn-sm btn-primary" type="button" id="btnSearchCity" value="Stadt suchen"/>
+                </div>
+          </div>
+        </form>
+    </div>
+
+    <div class="wrapper">    
+    <h2>Aktuelle Wetterlage in <span id="cityName"></span><span id="country">...</span></h2>
+    <table>      
+        <tr>    
+            <td>    
+                <strong>Temperatur: </strong>    
+                <label id="currentTemp"></label> 
+                <label>&deg;C</label>
+            </td> 
+         </tr>
+         <tr>
+            <td>    
+                <strong>Luftdruck: </strong>    
+                <label id="air"></label> 
+                <label>hPa</label>
+            </td>
+            <td>    
+                <img style="visibility: hidden" id="icon" src="" title="Wetter Icon" />   
+                <label id="description"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>    
+                <strong>Feuchtigkeit: </strong>    
+                <label id="hum"></label> 
+                <label>%</label>
+            </td>
+            </tr>
+        <tr>
+            <td>    
+                <strong>geringste Temperatur: </strong>    
+                <label id="lowTemp"></label>
+                <label>&deg;C</label>
+            </td>
+        </tr>
+        <tr>
+            <td>    
+                <strong>höchste Temperatur: </strong>    
+                <label id="highTemp"></label> 
+                <label>&deg;C</label>
+            </td>
+        </tr>
+        <tr>
+            <td>    
+                <strong>Windgeschwindigkeit: </strong>    
+                <label id="windSpeed"></label> 
+                <label>m/s</label>
+            </td>
+        </tr>
+        <tr>
+            <td>    
+                <strong>Windrichtung: </strong>    
+                <label id="windDir"></label> 
+                <label>&deg;</label>    
+            </td>
+        </tr>    
+    </table>    
+</div>  
