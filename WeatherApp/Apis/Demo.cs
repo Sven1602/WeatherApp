@@ -1,4 +1,5 @@
-﻿using WetterApp.Apis;
+﻿using WeatherApp.Interface;
+using WetterApp.Apis;
 using WetterApp.Interface;
 using WetterApp.Models;
 
@@ -9,7 +10,7 @@ namespace WeatherApp.Apis
         // andere Json Api
         private IApi api = new DemoApi();
         
-        private DemoDatabase database = new DemoDatabase();
+        private IDatabase database = new DemoDatabase();
 
         public override WeatherDataResponse getData(string city, string lang)
         {
